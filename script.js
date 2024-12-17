@@ -1,5 +1,5 @@
 function showMessage() {
     const message = document.getElementById('message');
-    message.textContent = 'Sigma Boy says: Be yourself and conquer!';
+    message.textContent = 'Sigma Boy says: Mewing!';
     message.style.display = 'block';
 }
