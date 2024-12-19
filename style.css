@@ -1,18 +1,45 @@
 body {
   background-color: #f0f8ff; /* Light blue background */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
   font-family: 'Arial', sans-serif;
-  background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  text-align: center;
+  background-color: #008000; /* Warna hijau untuk kesan segar */
+  padding: 20px 0;
+  box-shadow: 0 4px 2px -2px gray;
+}
+
+.judul-besar {
+  font-size: 48px; /* Ukuran huruf besar */
+  color: #ffffff; /* Warna teks putih */
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Bayangan teks untuk efek lebih menarik */
 }
 
 .container {
   text-align: center;
+  margin-top: 20px; /* Tambahkan margin-top untuk memberikan jarak dari judul */
 }
 
-.btn-christmas {
+.link-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Jarak antara tombol */
+  margin-bottom: 20px; /* Add margin bottom */
+}
+
+.link-item {
+  text-align: center;
+}
+
+.btn-redirect, .btn-christmas {
   background-color: #008000; /* Christmas green */
   color: #ffffff;
   padding: 15px 25px;
@@ -24,19 +51,12 @@ body {
   transition: background-color 0.3s, transform 0.3s;
 }
 
-.btn-christmas:hover {
+.btn-redirect:hover, .btn-christmas:hover {
   background-color: #006400; /* Dark green on hover */
 }
 
-.btn-christmas:active {
+.btn-redirect:active, .btn-christmas:active {
   background-color: #004d00;
   box-shadow: 0 2px #003300;
   transform: translateY(2px);
-}
-
-.message {
-  margin-top: 20px;
-  font-size: 24px;
-  color: #b22222; /* Christmas red */
-  text-shadow: 1px 1px 2px #000000;
 }
